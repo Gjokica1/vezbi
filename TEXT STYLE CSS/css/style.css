@@ -1,0 +1,34 @@
+header
+     {
+    text-align: center;
+    font-style: italic;
+     }
+body {
+     font-family: sans-serif;/* Isti karakteristiki na font za cela sodrzina vo body */
+    color:bisque;
+    font-size: 20px;
+     }
+body {
+    background-color: black; /* Crna pozadina so vmetnata slika, koja e fiksna pri skrolanje, ne se mrda.pozicionirana gore levo */
+    background-image: url(http://www.clker.com/cliparts/K/C/r/p/W/o/grey-oak-tree-hi.png);
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat      
+     }
+#PersonalInfo
+     {
+    word-spacing: 6px; /* menuvam karakteristiki na font preku id na section, ima prednost komandata vrz id vo odnos na onaa na  body */
+    text-align: justify;
+    font-weight: bold;
+     }
+#Earlycareer 
+     {
+    text-decoration: underline white;
+    color: aqua;
+    text-align: center;
+     }
+footer
+     {
+    text-align: center;
+    text-shadow: 10px 10px 10px blue ;
+     }
