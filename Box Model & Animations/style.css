@@ -1,15 +1,15 @@
 body {
   font-size: x-large;
-  font-family: sans-serif;
+  font-family: sans-serif; /* karakteristiki sto vazat za cel tekst vo body */
   text-align: center;
 }
 #cut {
-  float: left;
+  float: left; /* se pozicionira levo do kraj */
   height: 200px;
   width: 200px;
   background-color: aqua;
   margin: 2px;
-  padding: 8px;
+  padding: 8px;                   /* Box model, tekstot vnatre vo kutijata ne e prikazan cel so tri tocki e prekinat */
   border: 8px solid green;
   overflow: hidden;
   white-space: nowrap;
@@ -17,25 +17,25 @@ body {
   transition: width 2s;
 }
 #cut:hover {
-  width: 300px;
+  width: 300px; /* Na hover so mausot, se zzgolemuva sirinata na elementot vo koj ima tekst */
 }
 
 #scroll {
-  float: left;
+  float: left; /* se lepi na elementot pred nego od desna strana */
   height: 200px;
   width: 200px;
   background-color: chocolate;
   margin: 2px;
   padding: 4px;
   border: 6px solid burlywood;
-  overflow: auto;
+  overflow: auto;   /*ako nemamesto cel tekst dase prikaze vo kutijata, avtomatski pravi scroll bar za skrolanje do kraj na tekst  */
   transition-duration: 2s;
 }
 #scroll:hover {
-  transform: rotate(90deg);
+  transform: rotate(90deg);  /* na hover elementot se rotira za 90 stepeni */
 }
 #let {
-  float: left;
+  float: left; /* se lepi na elementot pred nego od desna strana */
   height: 200px;
   width: 200px;
   background-color: cornflowerblue;
@@ -43,14 +43,14 @@ body {
   padding: 10px;
   border: 10px;
   border-style: ridge;
-  overflow: visible;
+  overflow: visible; /* tekstot e prikazan celiot iako ne go sobira vo kutijata */
   transition: width 4s;
 }
 #let:hover {
   width: 420px;
 }
 
-.dropbtn {
+.dropbtn {  /* drop button za pagjacko meni */
   background-color: green;
   color: white;
   padding: 16px;
@@ -61,13 +61,13 @@ body {
   position: relative;
   display: inline-block;
 }
-.dropdown-content {
+.dropdown-content {  /* Sodrzina vvo pagjacko meni */
   display: none;
   position: absolute;
   background-color: white;
   min-width: 125px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1; /* da bide prikazana sodrzinata vo prv plan pred elementi so pomal z index */
 }
 .dropdown-content a {
   color: black;
@@ -75,7 +75,7 @@ body {
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {
+.dropdown-content a:hover {  /* Na hover menuva boja elementot */
   background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
