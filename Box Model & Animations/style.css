@@ -1,0 +1,148 @@
+body {
+  font-size: x-large;
+  font-family: sans-serif;
+  text-align: center;
+}
+#cut {
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  margin: 2px;
+  padding: 8px;
+  border: 8px solid green;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: width 2s;
+}
+#cut:hover {
+  width: 300px;
+}
+
+#scroll {
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-color: chocolate;
+  margin: 2px;
+  padding: 4px;
+  border: 6px solid burlywood;
+  overflow: auto;
+  transition-duration: 2s;
+}
+#scroll:hover {
+  transform: rotate(90deg);
+}
+#let {
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-color: cornflowerblue;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  border-style: ridge;
+  overflow: visible;
+  transition: width 4s;
+}
+#let:hover {
+  width: 420px;
+}
+
+.dropbtn {
+  background-color: green;
+  color: white;
+  padding: 16px;
+  border: none;
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 125px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@keyframes rotateZ {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#a {
+    background-color: red;
+    display: block;
+  animation: rotateZ 3s forwards;
+  width: 200px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  
+  }
+}
+#b {
+  display: block;
+  background-color: green;
+  width: 200px; height: auto;
+  animation-name: pulse;
+  animation: pulse 1s infinite;
+  animation-direction: alternate;
+}
+@keyframes swap {
+  100% {
+    transform: translateY(40px) scale(1.5);
+  }
+}
+#c {
+  display: block;
+  background-color: yellow;width: 200px;height: auto;
+  animation-name: swap;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes swap2 {
+  100% {
+    transform: translateY(-40px) ;
+  }
+}
+
+#d {
+  display: block;
+  background-color: blue; width: 200px;height: auto;
+  animation-name: swap2;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
