@@ -1,37 +1,153 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autobiography</title>
-     <link rel="stylesheet" href="css\style.css"> <!--Povrzuvam css external file so html-->
-</head>
-<body>
-    <header><h1>Gjokica Stojanovski-Autobiography</h1></header> 
-        
-        <section id="PersonalInfo">
-            My name is Gjokica Stojanovski.I was raised in a small rural town in New Hampshire
-            that is part of what’s known as the Upper Valley, a cluster of small towns
-            and villages in both New Hampshire and Vermont that are divided by the Connecticut River.
-            The city of Lebanon, like many small New England towns included in the “UV”, contains
-            a rich history deriving from its early colonial settlement and the presence of Dartmouth
-            College attend Antioch College in Yellow Springs, Ohio.
-        </section> <br> 
-        
-        <section id="Earlycareer">
-            My relationship with the guitar began in high school at the suggestion of my high school
-            guidance counselor. I was lacking enough credits to graduate, and was feeling disillusioned
-            with high school, my classes and American culture in general.
-        </section><br>
-        
-        <section id="Concerts">
-            Since 2012, I have continued to study with El Entri and other Flamenco artists such as Esau 
-            Saltos and Victor Puebla Velazquez, performing concerts in <mark><span style="text-transform: uppercase;">
-             Madrid Spain and New England</span></mark>, and I continue to compose my own music.    
-        </section><br>
-        
-        <footer><p>For contact:</p><a href="mailto:stojanovskigjokica@gmail.com">Send Email</a></footer>
-        <!--Stavam link koj so klik mi ovozmozuva da me kontaktira nekoj preku mail direktno-->
-</body>
+
+  <head>
+
+    <!--
+
+        Reshenieto e napishano na ovaj nachin poradi toa sho 
+
+        position: sticky ili fixed kreirat estetski problemi
+
+        i kje mora da se pishuva povekje kod
+
+        kako margini za da popunat prostor tamu deka stojat
+
+        elementi sho imata position: sticky ili fixed
+
+
+
+        sticky e u listata oti mislam deka mu treba -webkit-sticky
+
+        a mislam deka e podobro da izbegnuvame takvi stvari tamu
+
+        deka ima poednostavno reshenie
+
+    -->
+
+    <!-- 
+
+        Ima nekoja mala razlika u toa kako izgledat 
+
+        linkovite u aside pomegju flex i grid 
+
+    -->
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- zaednichki stylesheet -->
+
+    <link rel="stylesheet" href="clear.css" />
+
+    <link rel="stylesheet" href="grid.css" />
+
+    <!-- <link rel="stylesheet" href="flex.css" /> -->
+
+    <title>Grid & Flex</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <h1>Naslov</h1>
+
+    </header>
+
+    <main>
+
+      <aside class="right-shadow">
+
+        <div class="link-separator">
+
+          <a href=""><img class="icon" src="./static/home.svg" /> tekst</a>
+
+        </div>
+
+        <div class="link-separator">
+
+          <a href=""><img class="icon" src="./static/home.svg" /> tekst</a>
+
+        </div>
+
+        <div class="link-separator">
+
+          <a href=""><img class="icon" src="./static/home.svg" /> tekst</a>
+
+        </div>
+
+        <div class="link-separator">
+
+          <a href=""><img class="icon" src="./static/home.svg" /> tekst</a>
+
+        </div>
+
+      </aside>
+
+      <section>
+
+        <article class="center-shadow">
+
+          <h3>Naslov</h3>
+
+          <p>avtor</p>
+
+          <figure>
+
+            <img
+
+              class="article-image"
+
+              src="./static/lavertezzo_ponte2.jpg"
+
+              alt="Lavertezzo Bridge"
+
+            />
+
+            <figcaption>Lavertezzo Bridge</figcaption>
+
+          </figure>
+
+        </article>
+
+        <article class="center-shadow">
+
+          <h3>Naslov</h3>
+
+          <p>avtor</p>
+
+          <figure>
+
+            <img
+
+              class="article-image"
+
+              src="./static/delprevat.jpg"
+
+              alt="Cappana Leit"
+
+            />
+
+            <figcaption>Capanna Leit</figcaption>
+
+          </figure>
+
+        </article>
+
+      </section>
+
+    </main>
+
+    <footer>footer</footer>
+
+  </body>
+
 </html>
+
+
