@@ -1,0 +1,30 @@
+.usertag {
+    line-height: 1.6;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 200px;
+    padding-left: 160px;
+  }
+  .main {
+    grid-area: main;
+    width: 50%;
+    text-align: center;
+    margin-top: 45px;
+    padding-bottom: 50px;
+    padding-right: 60px;    
+  }
+  #post {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px;
+    width: 400px;
+  }
+  #descr {
+    text-decoration: underline;
+    position: relative;right: 120px;
+  }
+  .sec {
+    background-color: white;
+    border-radius: 10px;
+  }
+  
