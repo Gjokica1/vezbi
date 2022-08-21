@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [2,3,4,6,7,100,24,12,54,12,]; //niza od broevi
+      comp = 0;    // komparator e 0 so nego gi sporeduvame site clenovi od nizata
+      arr.forEach((element) => { //za sekoj clen od nizata
+          if (comp < element) {  //ako kompartorot e pomal od clenot
+              comp = element; //mu ja dodeluvame vrednosta na clenot na komparatorot
+          }
+      });
+      console.log(comp);
+    </script>
+  </body>
+</html>

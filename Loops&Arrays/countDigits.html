@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function countDigit(n) //iniciranje funkcija
+{
+    let count = 0; //deklarirame brojac na cifri = 0
+    while (n != 0)  //uslov za loop-ot da vrti brojot da ne e nula
+    {
+        n = Math.floor(n / 10); //go vadime desetkite, pri sto go briseme ostatokot
+        ++count;  //se zgolemuva brojacot za +1 cifra
+    }
+    return count;
+}
+
+console.log(countDigit(12652));
+    </script>
+</body>
+</html>
