@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="table-responsive"> 
+      <table class="table table-bordered" id="myTable">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td>Default</td>
+            <td>Defaultson</td>
+          </tr>
+          <tr class="success">
+            <td>Success</td>
+            <td>Doe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="button" onclick="myFunction()">Add row</button>
+    <script>
+        function myFunction() {
+          let table = document.getElementById("myTable");
+          let row = table.insertRow(3);
+          let cell1 = row.insertCell(0);
+          let cell2 = row.insertCell(1);
+          cell1.innerHTML = "NEW CELL1";
+          cell2.innerHTML = "NEW CELL2";
+        }
+        </script>
+  </body>
+</html>
