@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+  </head>
+  <body>
+    <form id="form">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="lname" name="fname" value="" /><br />
+      <p id='result1'></p>
+      <label for="lname">Last name: </label><br />
+      <input type="text" id="lname" name="lname" value="" /><br /><br />
+        <p id='result1'></p>
+      <label for="lname">Tel. Number:</label><br />
+      <input type="text" id="lname" name="number" value="" /><br /><br />
+      <p id='result1'></p>
+      <label for="lname">Email:</label><br />
+      <input type="text" id="lname" name="email" value="" /><br /><br />
+      <p id='result1'></p>
+      <label for="lname">Adress:</label><br />
+      <input type="text" id="lname" name="adress" value="" /><br /><br />
+      <p id='result1'></p>
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+        const form = document.getElementById("form");
+
+        form.addEventListener(
+          "focus",
+          (event) => {
+            document.getElementById("result1").innerHTML =
+              "";
+          },
+          true
+        );
+  
+        form.addEventListener(
+          "blur",
+          (event) => {
+            document.getElementById("result1").innerHTML = "This field is required";
+          },
+          true
+        );
+      </script>
+   
+  </body>
+</html>

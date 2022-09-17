@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="counter"></div>  
+  <button onclick="setTimeout(func1, 3000);">CLICK TO START</button> <!--so klik na kopce 
+    posle delay od 3 sec pocnuva f-jata da odbrojuva --> 
+
+      <script>
+    function func1() {      
+    var i = 0;
+    theLabel = document.getElementById("counter");
+    var interval = setInterval(
+    function counter () { 
+    if (i == 10) clearInterval(interval); //ako brojacot stigne do 10 da prestane f-jata
+    theLabel.innerHTML = i; 
+    i++;  
+}, 
+1000);} //funkcijata da se izvrsuva vo innterval od 1 sekunda 
+
+      </script>
+</html>
